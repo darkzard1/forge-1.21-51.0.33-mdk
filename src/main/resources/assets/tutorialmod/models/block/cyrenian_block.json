@@ -1,0 +1,11 @@
+{
+  "parent": "minecraft:block/cube",
+  "textures": {
+    "down": "tutorialmod:block/cyrenian_block_bottom",
+    "up": "tutorialmod:block/cyrenian_block_top",
+    "north": "tutorialmod:block/cyrenian_block",
+    "east": "tutorialmod:block/cyrenian_block",
+    "south": "tutorialmod:block/cyrenian_block",
+    "west": "tutorialmod:block/cyrenian_block"
+  }
+}
