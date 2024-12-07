@@ -2,9 +2,11 @@ package com.dark.tutorialmod.block;
 
 import com.dark.tutorialmod.TutorialMod;
 import com.dark.tutorialmod.items.ModItems;
+import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.item.Item;
 import net.minecraft.world.level.block.Block;
+import net.minecraft.world.level.block.DropExperienceBlock;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.block.state.BlockBehaviour;
 import net.minecraftforge.eventbus.api.IEventBus;
@@ -19,16 +21,16 @@ public class ModBlocks {
             DeferredRegister.create(ForgeRegistries.BLOCKS, TutorialMod.MOD_ID);
 
     public static final RegistryObject<Block> CYRENIAN_ORE =  registerBlock("cyrenian_ore",
-            () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+            () -> new DropExperienceBlock(UniformInt.of(5, 10), BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> RAW_CYRENIAN_BLOCK =  registerBlock("raw_cyrenian_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     public static final RegistryObject<Block> CYRENIAN_BLOCK =  registerBlock("cyrenian_block",
             () -> new Block(BlockBehaviour.Properties.of()
-                    .strength(4f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

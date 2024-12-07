@@ -1,6 +1,7 @@
 package com.dark.tutorialmod;
 
 import com.dark.tutorialmod.block.ModBlocks;
+import com.dark.tutorialmod.items.ModCreativeModeTabs;
 import com.dark.tutorialmod.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
@@ -32,6 +33,7 @@ public class TutorialMod {
         // Register ourselves for server and other game events we are interested in
         MinecraftForge.EVENT_BUS.register(this);
 
+        ModCreativeModeTabs.register(modEventBus);
 
         ModItems.register(modEventBus);
         ModBlocks.register(modEventBus);

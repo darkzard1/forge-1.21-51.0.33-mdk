@@ -5,5 +5,8 @@
 
    "block.tutorialmod.cyrenian_ore": "Cyrenian Ore",
    "block.tutorialmod.raw_cyrenian_block": "Raw Cyrenian Block",
-   "block.tutorialmod.cyrenian_block": "Cyrenian Block"
+   "block.tutorialmod.cyrenian_block": "Cyrenian Block",
+
+   "creativetab.tutorialmod.cyrenian_items": "Cyrenian Items",
+   "creativetab.tutorialmod.cyrenian_blocks": "Cyrenian Blocks"
 }

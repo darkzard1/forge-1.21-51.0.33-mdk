@@ -1,0 +1,8 @@
+{
+  "replace": false,
+  "values": [
+    "tutorialmod:cyrenian_ore",
+    "tutorialmod:raw_cyrenian_ore",
+    "tutorialmod:cyrenian_block"
+  ]
+}
