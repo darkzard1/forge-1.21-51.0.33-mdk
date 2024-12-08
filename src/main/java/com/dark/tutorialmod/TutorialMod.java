@@ -55,10 +55,15 @@ public class TutorialMod {
             event.accept(ModItems.CYRENIAN_NUGGET);
             event.accept(ModItems.CYRENIAN_INGOT);
         }
+
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
             event.accept(ModBlocks.CYRENIAN_ORE);
             event.accept(ModBlocks.RAW_CYRENIAN_BLOCK);
             event.accept(ModBlocks.CYRENIAN_BLOCK);
+        }
+
+        if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
+            event.accept(ModItems.CHISEL);
         }
     }
 
