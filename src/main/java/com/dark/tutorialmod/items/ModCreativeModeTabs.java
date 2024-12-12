@@ -33,6 +33,7 @@ public class ModCreativeModeTabs {
                         output.accept(ModBlocks.RAW_CYRENIAN_BLOCK.get());
                         output.accept(ModBlocks.CYRENIAN_ORE.get());
                         output.accept(ModBlocks.CYRENIAN_BLOCK.get());
+                        output.accept(ModBlocks.MAGIC_BLOCK.get());
 
                     }).build());
 

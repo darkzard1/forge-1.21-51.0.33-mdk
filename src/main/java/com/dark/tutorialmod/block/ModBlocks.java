@@ -1,6 +1,7 @@
 package com.dark.tutorialmod.block;
 
 import com.dark.tutorialmod.TutorialMod;
+import com.dark.tutorialmod.block.custom.MagicBlock;
 import com.dark.tutorialmod.items.ModItems;
 import net.minecraft.util.valueproviders.UniformInt;
 import net.minecraft.world.item.BlockItem;
@@ -31,6 +32,11 @@ public class ModBlocks {
     public static final RegistryObject<Block> CYRENIAN_BLOCK =  registerBlock("cyrenian_block",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
+            () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).requiresCorrectToolForDrops()));
+
+
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

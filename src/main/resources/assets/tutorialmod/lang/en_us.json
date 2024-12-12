@@ -3,10 +3,14 @@
    "item.tutorialmod.cyrenian_nugget": "Cyrenian Nugget",
    "item.tutorialmod.cyrenian_ingot": "Cyrenian Ingot",
    "item.tutorialmod.chisel": "Chisel",
+   "item.tutorialmod.mystic_powder": "Mystic Powder",
+
 
    "block.tutorialmod.cyrenian_ore": "Cyrenian Ore",
    "block.tutorialmod.raw_cyrenian_block": "Raw Cyrenian Block",
    "block.tutorialmod.cyrenian_block": "Cyrenian Block",
+   "block.tutorialmod.magic_block": "Magic Block",
+
 
    "creativetab.tutorialmod.cyrenian_items": "Cyrenian Items",
    "creativetab.tutorialmod.cyrenian_blocks": "Cyrenian Blocks"
