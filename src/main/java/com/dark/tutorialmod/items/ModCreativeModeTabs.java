@@ -37,6 +37,16 @@ public class ModCreativeModeTabs {
 
                     }).build());
 
+    public static final RegistryObject<CreativeModeTab> NEW_FOODS_TAB = CREATIVE_MODE_TABS.register("new_foods_tab",
+            () -> CreativeModeTab.builder().icon(()-> new ItemStack(ModItems.BLUEBERRIES.get()))
+                    .withTabsBefore(CYRENIAN_BLOCKS_TAB.getId())
+                    .title(Component.translatable("creativetab.tutorialmod.new_foods"))
+                    .displayItems((itemDisplayParameters, output) -> {
+                        output.accept(ModItems.BLUEBERRIES.get());
+
+                    }).build());
+
+
 
     public static void register(IEventBus eventBus) {
         CREATIVE_MODE_TABS.register(eventBus);

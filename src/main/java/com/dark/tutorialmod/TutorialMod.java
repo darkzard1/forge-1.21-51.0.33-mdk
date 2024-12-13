@@ -1,7 +1,6 @@
 package com.dark.tutorialmod;
 
 import com.dark.tutorialmod.block.ModBlocks;
-import com.dark.tutorialmod.events.AnvilRecipeHandler;
 import com.dark.tutorialmod.items.ModCreativeModeTabs;
 import com.dark.tutorialmod.items.ModItems;
 import com.mojang.logging.LogUtils;
@@ -29,10 +28,6 @@ public class TutorialMod {
     private static final Logger LOGGER = LogUtils.getLogger();
 
     public TutorialMod() {
-        MinecraftForge.EVENT_BUS.register(this);
-        MinecraftForge.EVENT_BUS.register(AnvilRecipeHandler.class);
-
-
         IEventBus modEventBus = FMLJavaModLoadingContext.get().getModEventBus();
         modEventBus.addListener(this::commonSetup);
         // Register ourselves for server and other game events we are interested in
@@ -60,6 +55,7 @@ public class TutorialMod {
             event.accept(ModItems.CYRENIAN_NUGGET);
             event.accept(ModItems.CYRENIAN_INGOT);
             event.accept(ModItems.MYSTIC_POWDER);
+            event.accept(ModItems.UNSTABLE_CONCOCTION);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
