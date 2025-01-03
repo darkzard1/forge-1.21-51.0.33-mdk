@@ -1,0 +1,4 @@
+// 1.21	2024-12-28T00:05:47.6509752	Loot Tables
+141e310dab17b921216b333f2e9ed6d5547a4ccc data/tutorialmod/loot_table/blocks/cyrenian_block.json
+0118f291d35c402c195c9a889b6ce68e54333516 data/tutorialmod/loot_table/blocks/cyrenian_ore.json
+7f82582d99d2c5ef76bffc6b23ff3d6e8dc48780 data/tutorialmod/loot_table/blocks/raw_cyrenian_block.json

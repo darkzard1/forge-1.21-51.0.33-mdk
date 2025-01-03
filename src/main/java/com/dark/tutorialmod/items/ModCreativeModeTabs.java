@@ -43,6 +43,7 @@ public class ModCreativeModeTabs {
                     .title(Component.translatable("creativetab.tutorialmod.new_foods"))
                     .displayItems((itemDisplayParameters, output) -> {
                         output.accept(ModItems.BLUEBERRIES.get());
+                        output.accept(ModItems.PINEAPPLE.get());
 
                     }).build());
 

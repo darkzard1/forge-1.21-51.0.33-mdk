@@ -1,0 +1,32 @@
+{
+  "parent": "minecraft:recipes/root",
+  "criteria": {
+    "has_cyrenian_nugget": {
+      "conditions": {
+        "items": [
+          {
+            "items": "tutorialmod:cyrenian_nugget"
+          }
+        ]
+      },
+      "trigger": "minecraft:inventory_changed"
+    },
+    "has_the_recipe": {
+      "conditions": {
+        "recipe": "tutorialmod:cyrenian_ingot"
+      },
+      "trigger": "minecraft:recipe_unlocked"
+    }
+  },
+  "requirements": [
+    [
+      "has_the_recipe",
+      "has_cyrenian_nugget"
+    ]
+  ],
+  "rewards": {
+    "recipes": [
+      "tutorialmod:cyrenian_ingot"
+    ]
+  }
+}

@@ -17,5 +17,7 @@
 
    "creativetab.tutorialmod.cyrenian_items": "Cyrenian Items",
    "creativetab.tutorialmod.cyrenian_blocks": "Cyrenian Blocks",
-   "creativetab.tutorialmod.new_foods": "New Foods"
+   "creativetab.tutorialmod.new_foods": "New Foods",
+
+   "tooltip.tutorialmod.raw_cyrenian": "A delicate and precious ore discovered by §b Cyrus Krux"
 }
