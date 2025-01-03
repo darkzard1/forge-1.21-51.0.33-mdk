@@ -1,10 +1,12 @@
 package com.dark.tutorialmod.datagen;
 
+import com.dark.tutorialmod.TutorialMod;
 import com.dark.tutorialmod.block.ModBlocks;
 import com.dark.tutorialmod.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
 
@@ -45,7 +47,8 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.CYRENIAN_INGOT.get(),9)
                 .requires(ModBlocks.CYRENIAN_BLOCK.get())
-                .unlockedBy(getHasName(ModBlocks.CYRENIAN_BLOCK.get()), has(ModBlocks.CYRENIAN_BLOCK.get())).save(pRecipeOutput);
+                .unlockedBy(getHasName(ModBlocks.CYRENIAN_BLOCK.get()), has(ModBlocks.CYRENIAN_BLOCK.get())).save(pRecipeOutput,
+                        TutorialMod.MOD_ID + ":cyrenian_from_cyrenian_block");
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.CYRENIAN_NUGGET.get(),9)
                 .requires(ModItems.CYRENIAN_INGOT.get())
@@ -57,5 +60,27 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         oreSmelting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_INGOT.get(), 5.0f, 1000, "cyrenian_ingot");
         oreBlasting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_INGOT.get(), 6.0f, 800, "cyrenian_ingot");
+
+
+    }
+
+    protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
+                                      float pExperience, int pCookingTIme, String pGroup) {
+        oreCooking(recipeOutput, RecipeSerializer.SMELTING_RECIPE, SmeltingRecipe::new, pIngredients, pCategory, pResult,
+                pExperience, pCookingTIme, pGroup, "_from_smelting");
+    }
+
+    protected static void oreBlasting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,
+                                      float pExperience, int pCookingTime, String pGroup) {
+        oreCooking(recipeOutput, RecipeSerializer.BLASTING_RECIPE, BlastingRecipe::new, pIngredients, pCategory, pResult,
+                pExperience, pCookingTime, pGroup, "_from_blasting");
+    }
+
+    protected static <T extends AbstractCookingRecipe> void oreCooking(RecipeOutput recipeOutput, RecipeSerializer<T> pCookingSerializer, AbstractCookingRecipe.Factory<T> factory,
+                                                                       List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult, float pExperience, int pCookingTime, String pGroup, String pRecipeName) {
+        for (ItemLike itemlike : pIngredients) {
+            SimpleCookingRecipeBuilder.generic(Ingredient.of(itemlike), pCategory, pResult, pExperience, pCookingTime, pCookingSerializer, factory).group(pGroup).unlockedBy(getHasName(itemlike), has(itemlike))
+                    .save(recipeOutput, TutorialMod.MOD_ID + ":" + getItemName(pResult) + pRecipeName + "_" + getItemName(itemlike));
+        }
     }
 }

@@ -1,13 +1,7 @@
-// 1.21	2024-12-30T21:31:03.3672417	Block States: tutorialmod
-d4e18993fcadb18355a4f18263b0f962e269c786 assets/tutorialmod/blockstates/cyrenian_block.json
+// 1.21	2025-01-03T17:05:13.9104411	Block States: tutorialmod
 233cb76b1ff0d064926021ecf029a08ce5996d02 assets/tutorialmod/blockstates/cyrenian_ore.json
 2d316979b5247b802b0590d94b40bac75fde6974 assets/tutorialmod/blockstates/magic_block.json
-21554d43725002a2312d24904d53477934e407ad assets/tutorialmod/blockstates/raw_cyrenian_block.json
-1e53a56a46ba1294b2f5521897fade020ad4e4ad assets/tutorialmod/models/block/cyrenian_block.json
 6ca9de4046a04933ba0c7269bea14ae8e92b4910 assets/tutorialmod/models/block/cyrenian_ore.json
 ed27aaa00c275028e1495bb6d6bfdcea1851067b assets/tutorialmod/models/block/magic_block.json
-d7bc9ade3cd90fe3edb6b73b7a0cc68fad436784 assets/tutorialmod/models/block/raw_cyrenian_block.json
-ce4b5642b17329ef869da326d235b60b785e2f13 assets/tutorialmod/models/item/cyrenian_block.json
 ad531f3a6dd35d00954fedaf1ba209520df53faf assets/tutorialmod/models/item/cyrenian_ore.json
 db3c7fd404543728f8b989bee0ca68018dac6e79 assets/tutorialmod/models/item/magic_block.json
-a62df9e40b4891b011a23cee6792ef797d48dacd assets/tutorialmod/models/item/raw_cyrenian_block.json
