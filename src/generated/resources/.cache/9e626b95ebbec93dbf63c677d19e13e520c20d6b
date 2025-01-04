@@ -1,4 +1,4 @@
-// 1.21	2025-01-02T22:58:40.9805673	Tags for minecraft:block mod id tutorialmod
-968ca0a3065cbec393dbf10061e54c4cb34adf97 data/minecraft/tags/block/mineable/pickaxe.json
-d9c18f0300c256627b32ded63ad45ab2a9aa9388 data/minecraft/tags/block/needs_diamond_tool.json
+// 1.21	2025-01-03T23:14:48.9209247	Tags for minecraft:block mod id tutorialmod
+d86eff92791e301dcb54e6b643e5afcb3153b606 data/minecraft/tags/block/mineable/pickaxe.json
+68bcbc870b021c3ec5b68f05832ddface0c88132 data/minecraft/tags/block/needs_diamond_tool.json
 f30a6367dbc22bbef01d6bf2a992f645005f83b5 data/minecraft/tags/block/needs_iron_tool.json

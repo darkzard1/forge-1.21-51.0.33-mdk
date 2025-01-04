@@ -10,9 +10,11 @@
 
 
    "block.tutorialmod.cyrenian_ore": "Cyrenian Ore",
+   "block.tutorialmod.cyrenian_deepslate_ore": "Cyrenian Deepslate Ore",
    "block.tutorialmod.raw_cyrenian_block": "Raw Cyrenian Block",
    "block.tutorialmod.cyrenian_block": "Cyrenian Block",
    "block.tutorialmod.magic_block": "Magic Block",
+   "block.tutorialmod.obsidian_stairs": "Obsidian Stairs",
 
 
    "creativetab.tutorialmod.cyrenian_items": "Cyrenian Items",

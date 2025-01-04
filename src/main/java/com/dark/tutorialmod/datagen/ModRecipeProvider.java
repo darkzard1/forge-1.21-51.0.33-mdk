@@ -6,6 +6,7 @@ import com.dark.tutorialmod.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
 import net.minecraftforge.common.crafting.conditions.IConditionBuilder;
@@ -62,6 +63,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreBlasting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_INGOT.get(), 6.0f, 800, "cyrenian_ingot");
 
 
+
+        stairBuilder(ModBlocks.OBSIDIAN_STAIRS.get(), Ingredient.of(Items.OBSIDIAN))
+                .unlockedBy("has_obsidian", has(Items.OBSIDIAN)).save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

@@ -22,15 +22,18 @@ public class ModBlockTagProvider extends BlockTagsProvider {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
                 .add(ModBlocks.CYRENIAN_BLOCK.get())
                 .add(ModBlocks.CYRENIAN_ORE.get())
+                .add(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get())
                 .add(ModBlocks.RAW_CYRENIAN_BLOCK.get())
                 .add(ModBlocks.MAGIC_BLOCK.get());
 
         tag(BlockTags.NEEDS_DIAMOND_TOOL)
                 .add(ModBlocks.CYRENIAN_BLOCK.get())
                 .add(ModBlocks.CYRENIAN_ORE.get())
+                .add(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get())
                 .add(ModBlocks.RAW_CYRENIAN_BLOCK.get());
 
         tag(BlockTags.NEEDS_IRON_TOOL)
                 .add(ModBlocks.MAGIC_BLOCK.get());
+
     }
 }

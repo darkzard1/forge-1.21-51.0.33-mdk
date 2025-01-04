@@ -5,6 +5,7 @@ import com.dark.tutorialmod.items.ModCreativeModeTabs;
 import com.dark.tutorialmod.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
+import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -62,6 +63,7 @@ public class TutorialMod {
             event.accept(ModBlocks.CYRENIAN_ORE);
             event.accept(ModBlocks.RAW_CYRENIAN_BLOCK);
             event.accept(ModBlocks.CYRENIAN_BLOCK);
+            event.accept(ModBlocks.OBSIDIAN_STAIRS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

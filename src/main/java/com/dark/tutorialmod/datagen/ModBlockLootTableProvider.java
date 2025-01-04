@@ -32,6 +32,10 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
 
         this.add(ModBlocks.CYRENIAN_ORE.get(),
                 block -> createOreDrop(ModBlocks.CYRENIAN_ORE.get(), ModItems.RAW_CYRENIAN.get()));
+        this.add(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get(),
+                block -> createMultipleOreDrops(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get(), ModItems.RAW_CYRENIAN.get(), 1, 2));
+
+        this.dropSelf(ModBlocks.OBSIDIAN_STAIRS.get());
     }
 
     //the class under the comment is to make blocks drop multiple items upon breaking
