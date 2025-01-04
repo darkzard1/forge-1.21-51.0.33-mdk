@@ -1,0 +1,13 @@
+{
+  "type": "minecraft:blasting",
+  "category": "misc",
+  "cookingtime": 800,
+  "experience": 6.0,
+  "group": "cyrenian_ingot",
+  "ingredient": {
+    "item": "tutorialmod:raw_cyrenian"
+  },
+  "result": {
+    "id": "tutorialmod:cyrenian_ingot"
+  }
+}
