@@ -23,6 +23,7 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
     protected void buildRecipes(RecipeOutput pRecipeOutput) {
         List<ItemLike> CYRENIAN_SMELTABLES = List.of(ModItems.RAW_CYRENIAN.get());
                 ModBlocks.CYRENIAN_ORE.get();
+                ModBlocks.CYRENIAN_DEEPSLATE_ORE.get();
 
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CYRENIAN_BLOCK.get())
@@ -59,13 +60,16 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .requires(ModBlocks.RAW_CYRENIAN_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.RAW_CYRENIAN_BLOCK.get()), has(ModBlocks.RAW_CYRENIAN_BLOCK.get())).save(pRecipeOutput);
 
-        oreSmelting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_INGOT.get(), 5.0f, 1000, "cyrenian_ingot");
-        oreBlasting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_INGOT.get(), 6.0f, 800, "cyrenian_ingot");
+        oreSmelting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_NUGGET.get(), 5.0f, 1000, "cyrenian_nugget");
+        oreBlasting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_NUGGET.get(), 6.0f, 800, "cyrenian_nugget");
 
 
 
         stairBuilder(ModBlocks.OBSIDIAN_STAIRS.get(), Ingredient.of(Items.OBSIDIAN))
                 .unlockedBy("has_obsidian", has(Items.OBSIDIAN)).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.DIAMOND_STAIRS.get(), Ingredient.of(Items.DIAMOND_BLOCK))
+                .unlockedBy("has_diamond_block", has(Items.DIAMOND_BLOCK)).save(pRecipeOutput);
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

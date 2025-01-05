@@ -13,7 +13,7 @@
     },
     "has_the_recipe": {
       "conditions": {
-        "recipe": "tutorialmod:cyrenian_ingot_from_blasting_raw_cyrenian"
+        "recipe": "tutorialmod:cyrenian_nugget_from_smelting_raw_cyrenian"
       },
       "trigger": "minecraft:recipe_unlocked"
     }
@@ -26,7 +26,7 @@
   ],
   "rewards": {
     "recipes": [
-      "tutorialmod:cyrenian_ingot_from_blasting_raw_cyrenian"
+      "tutorialmod:cyrenian_nugget_from_smelting_raw_cyrenian"
     ]
   }
 }

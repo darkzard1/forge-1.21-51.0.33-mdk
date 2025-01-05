@@ -15,6 +15,7 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
+import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -36,6 +37,7 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
                 block -> createMultipleOreDrops(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get(), ModItems.RAW_CYRENIAN.get(), 1, 2));
 
         this.dropSelf(ModBlocks.OBSIDIAN_STAIRS.get());
+        this.dropSelf(ModBlocks.DIAMOND_STAIRS.get());
     }
 
     //the class under the comment is to make blocks drop multiple items upon breaking

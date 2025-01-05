@@ -64,6 +64,7 @@ public class TutorialMod {
             event.accept(ModBlocks.RAW_CYRENIAN_BLOCK);
             event.accept(ModBlocks.CYRENIAN_BLOCK);
             event.accept(ModBlocks.OBSIDIAN_STAIRS);
+            event.accept(ModBlocks.DIAMOND_STAIRS);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {

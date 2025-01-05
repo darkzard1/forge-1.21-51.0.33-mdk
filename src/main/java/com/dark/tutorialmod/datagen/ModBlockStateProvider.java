@@ -3,7 +3,6 @@ package com.dark.tutorialmod.datagen;
 import com.dark.tutorialmod.TutorialMod;
 import com.dark.tutorialmod.block.ModBlocks;
 import net.minecraft.data.PackOutput;
-import net.minecraft.world.item.BlockItem;
 import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.StairBlock;
@@ -25,8 +24,10 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.CYRENIAN_DEEPSLATE_ORE);
 
         stairsBlock(((StairBlock) ModBlocks.OBSIDIAN_STAIRS.get()), blockTexture(Blocks.OBSIDIAN));
-
         blockItem(ModBlocks.OBSIDIAN_STAIRS);
+
+        stairsBlock(((StairBlock) ModBlocks.DIAMOND_STAIRS.get()), blockTexture(Blocks.DIAMOND_BLOCK));
+        blockItem(ModBlocks.DIAMOND_STAIRS);
     }
 
     private void blockWithItem(RegistryObject<Block> blockRegistryObject) {

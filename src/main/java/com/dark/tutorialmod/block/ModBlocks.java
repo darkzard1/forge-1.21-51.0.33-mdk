@@ -41,6 +41,9 @@ public class ModBlocks {
     public static final RegistryObject<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs",
             () -> new StairBlock(Blocks.OBSIDIAN.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()));
 
+    public static final RegistryObject<Block> DIAMOND_STAIRS = registerBlock("diamond_stairs",
+            () -> new StairBlock(Blocks.DIAMOND_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
 
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
