@@ -15,7 +15,6 @@ import net.minecraft.world.level.storage.loot.entries.LootItem;
 import net.minecraft.world.level.storage.loot.functions.ApplyBonusCount;
 import net.minecraft.world.level.storage.loot.functions.SetItemCountFunction;
 import net.minecraft.world.level.storage.loot.providers.number.UniformGenerator;
-import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.registries.RegistryObject;
 
 import java.util.Set;
@@ -29,7 +28,9 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
     protected void generate() {
         dropSelf(ModBlocks.CYRENIAN_BLOCK.get());
         dropSelf(ModBlocks.RAW_CYRENIAN_BLOCK.get());
-        //dropSelf(ModBlocks.MAGIC_BLOCK.get());
+        dropSelf(ModBlocks.SOUL_SAND_BRICK.get());
+        dropSelf(ModBlocks.SOUL_SAND_BRICK_CRACKED.get());
+        dropSelf(ModBlocks.SOUL_SAND_BRICK_LEAKING.get());
 
         this.add(ModBlocks.CYRENIAN_ORE.get(),
                 block -> createOreDrop(ModBlocks.CYRENIAN_ORE.get(), ModItems.RAW_CYRENIAN.get()));

@@ -22,6 +22,9 @@ public class ModBlockStateProvider extends BlockStateProvider {
         blockWithItem(ModBlocks.MAGIC_BLOCK);
         blockWithItem(ModBlocks.CYRENIAN_ORE);
         blockWithItem(ModBlocks.CYRENIAN_DEEPSLATE_ORE);
+        blockWithItem(ModBlocks.SOUL_SAND_BRICK);
+        blockWithItem(ModBlocks.SOUL_SAND_BRICK_CRACKED);
+        blockWithItem(ModBlocks.SOUL_SAND_BRICK_LEAKING);
 
         stairsBlock(((StairBlock) ModBlocks.OBSIDIAN_STAIRS.get()), blockTexture(Blocks.OBSIDIAN));
         blockItem(ModBlocks.OBSIDIAN_STAIRS);

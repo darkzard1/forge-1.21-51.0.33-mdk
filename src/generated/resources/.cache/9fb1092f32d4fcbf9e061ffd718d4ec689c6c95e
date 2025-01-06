@@ -1,4 +1,4 @@
-// 1.21	2025-01-04T23:59:23.7099335	Recipes
+// 1.21	2025-01-05T21:48:58.2048457	Recipes
 a04fd79357344e7b63e5c6bf7836683cf845b74f data/tutorialmod/advancement/recipes/building_blocks/diamond_stairs.json
 b2d3d821b7fb571a75f04c9c0aa905794e1439a9 data/tutorialmod/advancement/recipes/building_blocks/obsidian_stairs.json
 af188dd529fff1fbd69c3b44690141d847cea2ec data/tutorialmod/advancement/recipes/misc/cyrenian_block.json
@@ -9,6 +9,7 @@ c0177fea7e8ecb0b5aa0179fd7bc6def7ca1fbe1 data/tutorialmod/advancement/recipes/mi
 e0b3b1bf4d4e0af4e0412ee0db99db06ebf7c9f9 data/tutorialmod/advancement/recipes/misc/cyrenian_nugget_from_smelting_raw_cyrenian.json
 3bd4dd3e870be3ae15d5d5400483c25a213ea817 data/tutorialmod/advancement/recipes/misc/raw_cyrenian.json
 3fcae44df605626a4f5070afd42a25fd0a2cbedf data/tutorialmod/advancement/recipes/misc/raw_cyrenian_block.json
+5d6b89d26d1607ce3ef02eb70703e78c7ccc4b47 data/tutorialmod/advancement/recipes/misc/soul_sand_brick.json
 d047e921d02af4ac533d58d98f25a4d95e76f7fc data/tutorialmod/recipe/cyrenian_block.json
 94aca951a55637aed36a911f0a1c31f9834a6cad data/tutorialmod/recipe/cyrenian_from_cyrenian_block.json
 80b8b26b30aeccde35455ad7d0a403dca7e09ced data/tutorialmod/recipe/cyrenian_ingot.json
@@ -19,3 +20,4 @@ e0b8f7adf15e63a19564ec6a256db88fdd32f0a3 data/tutorialmod/recipe/cyrenian_nugget
 7c1e81f492a60cf15066d04618c1728b51840f04 data/tutorialmod/recipe/obsidian_stairs.json
 b71f37565af0aa5d5087992065f2ca2df7b1575d data/tutorialmod/recipe/raw_cyrenian.json
 8f42a1333196ace3496792febd8ca6de8b04c7f0 data/tutorialmod/recipe/raw_cyrenian_block.json
+d6b5fdd845e97f0f4d4153e5f7d99ef87a6f666f data/tutorialmod/recipe/soul_sand_brick.json

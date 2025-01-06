@@ -6,6 +6,7 @@ import com.dark.tutorialmod.items.ModItems;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.PackOutput;
 import net.minecraft.data.recipes.*;
+import net.minecraft.world.item.Item;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.*;
 import net.minecraft.world.level.ItemLike;
@@ -46,6 +47,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .pattern("AAA")
                 .define('A', ModItems.RAW_CYRENIAN.get())
                 .unlockedBy(getHasName(ModItems.RAW_CYRENIAN.get()), has(ModItems.RAW_CYRENIAN.get())).save(pRecipeOutput);
+
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUL_SAND_BRICK.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Items.SOUL_SAND)
+                .unlockedBy(getHasName(Items.SOUL_SAND), has(Items.SOUL_SAND)).save(pRecipeOutput);
 
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.CYRENIAN_INGOT.get(),9)
                 .requires(ModBlocks.CYRENIAN_BLOCK.get())

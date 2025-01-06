@@ -1,7 +1,10 @@
-// 1.21	2025-01-04T23:52:42.7517921	Loot Tables
+// 1.21	2025-01-05T22:00:42.536102	Loot Tables
 141e310dab17b921216b333f2e9ed6d5547a4ccc data/tutorialmod/loot_table/blocks/cyrenian_block.json
 7a0313e5ea40b024f494718fdba31507314ce69a data/tutorialmod/loot_table/blocks/cyrenian_deepslate_ore.json
 0118f291d35c402c195c9a889b6ce68e54333516 data/tutorialmod/loot_table/blocks/cyrenian_ore.json
 d5769d77d53b30539afecc1b1215340ac3f11655 data/tutorialmod/loot_table/blocks/diamond_stairs.json
 f9ecf847745cc1ae72566ecc3d6b2aa7452fa38d data/tutorialmod/loot_table/blocks/obsidian_stairs.json
 7f82582d99d2c5ef76bffc6b23ff3d6e8dc48780 data/tutorialmod/loot_table/blocks/raw_cyrenian_block.json
+231afb4609cefcf95676ac6bfbfe7ae56d892d54 data/tutorialmod/loot_table/blocks/soul_sand_brick.json
+6aae6b17922e5e54948673c6a8fc59cbaadb7218 data/tutorialmod/loot_table/blocks/soul_sand_brick_cracked.json
+24e5701b49eafe475ec5322151bab5f08055de3a data/tutorialmod/loot_table/blocks/soul_sand_brick_leaking.json
