@@ -7,6 +7,13 @@
    "item.tutorialmod.blueberries": "Blueberries",
    "item.tutorialmod.pineapple": "Pineapple",
    "item.tutorialmod.unstable_concoction": "Unstable Concoction",
+   "item.tutorialmod.raw_jade": "Raw Jade",
+   "item.tutorialmod.jade": "Jade",
+   "item.tutorialmod.empowered_iron_axe": "Empowered Iron Axe",
+   "item.tutorialmod.empowered_iron_shovel": "Empowered Iron Shovel",
+   "item.tutorialmod.empowered_iron_pickaxe": "Empowered Iron Pickaxe",
+   "item.tutorialmod.empowered_iron_sword": "Empowered Iron Sword",
+   "item.tutorialmod.empowered_iron_hoe": "Empowered Iron Hoe",
 
 
    "block.tutorialmod.cyrenian_ore": "Cyrenian Ore",
@@ -17,8 +24,14 @@
    "block.tutorialmod.obsidian_stairs": "Obsidian Stairs",
    "block.tutorialmod.diamond_stairs": "Diamond Stairs",
    "block.tutorialmod.soul_sand_brick": "Soul Sand Brick",
+   "block.tutorialmod.soul_sand_bricks": "Soul Sand Bricks",
+   "block.tutorialmod.soul_sand_brick_empowered": "Soul Sand Brick Empowered",
    "block.tutorialmod.soul_sand_brick_cracked": "Soul Sand Brick Cracked",
    "block.tutorialmod.soul_sand_brick_leaking": "Soul Sand Brick Leaking",
+   "block.tutorialmod.soul_sand_brick_stairs": "Soul Sand Brick Stairs",
+   "block.tutorialmod.soul_sand_brick_slab": "Soul Sand Brick Slab",
+   "block.tutorialmod.sand_soil": "Sand Soil",
+   "block.tutorialmod.jade_deposit": "Jade Deposit",
 
 
 

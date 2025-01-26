@@ -1,0 +1,13 @@
+{
+  "variants": {
+    "type=bottom": {
+      "model": "tutorialmod:block/soul_sand_brick_slab"
+    },
+    "type=double": {
+      "model": "tutorialmod:block/soul_sand_brick"
+    },
+    "type=top": {
+      "model": "tutorialmod:block/soul_sand_brick_slab_top"
+    }
+  }
+}

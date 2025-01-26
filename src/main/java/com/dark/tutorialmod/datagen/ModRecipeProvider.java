@@ -26,6 +26,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 ModBlocks.CYRENIAN_ORE.get();
                 ModBlocks.CYRENIAN_DEEPSLATE_ORE.get();
 
+        List<ItemLike> JADE_SMELTABLES = List.of(ModItems.RAW_JADE.get());
+        ModBlocks.JADE_DEPOSIT.get();
+
 
         ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.CYRENIAN_BLOCK.get())
                 .pattern("AAA")
@@ -55,6 +58,13 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
                 .define('A', Items.SOUL_SAND)
                 .unlockedBy(getHasName(Items.SOUL_SAND), has(Items.SOUL_SAND)).save(pRecipeOutput);
 
+        ShapedRecipeBuilder.shaped(RecipeCategory.MISC, ModBlocks.SOUL_SAND_BRICKS.get())
+                .pattern("AAA")
+                .pattern("AAA")
+                .pattern("AAA")
+                .define('A', Items.SOUL_SAND)
+                .unlockedBy(getHasName(Items.SOUL_SAND), has(Items.SOUL_SAND)).save(pRecipeOutput);
+
         ShapelessRecipeBuilder.shapeless(RecipeCategory.MISC,ModItems.CYRENIAN_INGOT.get(),9)
                 .requires(ModBlocks.CYRENIAN_BLOCK.get())
                 .unlockedBy(getHasName(ModBlocks.CYRENIAN_BLOCK.get()), has(ModBlocks.CYRENIAN_BLOCK.get())).save(pRecipeOutput,
@@ -71,6 +81,9 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
         oreSmelting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_NUGGET.get(), 5.0f, 1000, "cyrenian_nugget");
         oreBlasting(pRecipeOutput, CYRENIAN_SMELTABLES, RecipeCategory.MISC, ModItems.CYRENIAN_NUGGET.get(), 6.0f, 800, "cyrenian_nugget");
 
+        oreSmelting(pRecipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 5.0f, 1000, "jade");
+        oreBlasting(pRecipeOutput, JADE_SMELTABLES, RecipeCategory.MISC, ModItems.JADE.get(), 6.0f, 800, "jade");
+
 
 
         stairBuilder(ModBlocks.OBSIDIAN_STAIRS.get(), Ingredient.of(Items.OBSIDIAN))
@@ -78,6 +91,11 @@ public class ModRecipeProvider extends RecipeProvider implements IConditionBuild
 
         stairBuilder(ModBlocks.DIAMOND_STAIRS.get(), Ingredient.of(Items.DIAMOND_BLOCK))
                 .unlockedBy("has_diamond_block", has(Items.DIAMOND_BLOCK)).save(pRecipeOutput);
+
+        stairBuilder(ModBlocks.SOUL_SAND_BRICK_STAIRS.get(), Ingredient.of(ModBlocks.SOUL_SAND_BRICK.get()))
+                .unlockedBy("has_soul_sand_brick", has(ModBlocks.SOUL_SAND_BRICK.get())).save(pRecipeOutput);
+
+        slab(pRecipeOutput, RecipeCategory.BUILDING_BLOCKS, ModBlocks.SOUL_SAND_BRICK_SLAB.get(), ModBlocks.SOUL_SAND_BRICK.get());
     }
 
     protected static void oreSmelting(RecipeOutput recipeOutput, List<ItemLike> pIngredients, RecipeCategory pCategory, ItemLike pResult,

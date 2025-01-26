@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:item/handheld",
+  "textures": {
+    "layer0": "tutorialmod:item/empowered_iron_shovel"
+  }
+}

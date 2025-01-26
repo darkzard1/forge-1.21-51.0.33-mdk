@@ -29,16 +29,26 @@ public class ModBlockLootTableProvider extends BlockLootSubProvider {
         dropSelf(ModBlocks.CYRENIAN_BLOCK.get());
         dropSelf(ModBlocks.RAW_CYRENIAN_BLOCK.get());
         dropSelf(ModBlocks.SOUL_SAND_BRICK.get());
+        dropSelf(ModBlocks.SOUL_SAND_BRICKS.get());
+        dropSelf(ModBlocks.SOUL_SAND_BRICK_EMPOWERED.get());
         dropSelf(ModBlocks.SOUL_SAND_BRICK_CRACKED.get());
         dropSelf(ModBlocks.SOUL_SAND_BRICK_LEAKING.get());
+        dropSelf(ModBlocks.SAND_SOIL.get());
 
         this.add(ModBlocks.CYRENIAN_ORE.get(),
                 block -> createOreDrop(ModBlocks.CYRENIAN_ORE.get(), ModItems.RAW_CYRENIAN.get()));
         this.add(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get(),
                 block -> createMultipleOreDrops(ModBlocks.CYRENIAN_DEEPSLATE_ORE.get(), ModItems.RAW_CYRENIAN.get(), 1, 2));
 
+        this.add(ModBlocks.JADE_DEPOSIT.get(),
+                block -> createOreDrop(ModBlocks.JADE_DEPOSIT.get(), ModItems.RAW_JADE.get()));
+
         this.dropSelf(ModBlocks.OBSIDIAN_STAIRS.get());
         this.dropSelf(ModBlocks.DIAMOND_STAIRS.get());
+        this.dropSelf(ModBlocks.SOUL_SAND_BRICK_STAIRS.get());
+
+        this.add(ModBlocks.SOUL_SAND_BRICK_SLAB.get(),
+                block -> createSlabItemTable(ModBlocks.SOUL_SAND_BRICK_SLAB.get()));
     }
 
     //the class under the comment is to make blocks drop multiple items upon breaking

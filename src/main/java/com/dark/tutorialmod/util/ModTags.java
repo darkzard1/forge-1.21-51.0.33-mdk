@@ -10,6 +10,8 @@ import net.minecraft.world.level.block.Block;
 
 public class ModTags {
     public static class Blocks {
+        public static final TagKey<Block> NEEDS_EMPOWERED_IRON_TOOL = createTag("needs_empowered_iron_tool");
+        public static final TagKey<Block> INCORRECT_FOR_EMPOWERED_IRON_TOOL = createTag("incorrect_for_empowered_iron_tool");
 
         public static TagKey<Block> createTag(String name) {
             return BlockTags.create(ResourceLocation.fromNamespaceAndPath(TutorialMod.MOD_ID, name));

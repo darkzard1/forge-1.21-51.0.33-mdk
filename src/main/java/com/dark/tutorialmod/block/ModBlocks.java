@@ -23,6 +23,11 @@ public class ModBlocks {
             () -> new DropExperienceBlock(UniformInt.of(5, 10), BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> JADE_DEPOSIT = registerBlock("jade_deposit",
+            () -> new DropExperienceBlock(UniformInt.of(7, 11), BlockBehaviour.Properties.of()
+                    .strength(5f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+
     public static final RegistryObject<Block> CYRENIAN_DEEPSLATE_ORE = registerBlock("cyrenian_deepslate_ore",
             () -> new DropExperienceBlock(UniformInt.of(5, 10), BlockBehaviour.Properties.of()
                     .strength(5f).requiresCorrectToolForDrops().sound(SoundType.DEEPSLATE)));
@@ -39,7 +44,19 @@ public class ModBlocks {
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
+    public static final RegistryObject<Block> SOUL_SAND_BRICKS = registerBlock("soul_sand_bricks",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> SAND_SOIL = registerBlock("sand_soil",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(1f).requiresCorrectToolForDrops().sound(SoundType.SAND)));
+
     public static final RegistryObject<Block> SOUL_SAND_BRICK_CRACKED = registerBlock("soul_sand_brick_cracked",
+            () -> new Block(BlockBehaviour.Properties.of()
+                    .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
+
+    public static final RegistryObject<Block> SOUL_SAND_BRICK_EMPOWERED = registerBlock("soul_sand_brick_empowered",
             () -> new Block(BlockBehaviour.Properties.of()
                     .strength(3f).requiresCorrectToolForDrops().sound(SoundType.STONE)));
 
@@ -50,11 +67,18 @@ public class ModBlocks {
     public static final RegistryObject<Block> MAGIC_BLOCK = registerBlock("magic_block",
             () -> new MagicBlock(BlockBehaviour.Properties.of().strength(2f).noLootTable()));
 
+    public static final RegistryObject<Block> SOUL_SAND_BRICK_STAIRS = registerBlock("soul_sand_brick_stairs",
+            () -> new StairBlock(ModBlocks.SOUL_SAND_BRICK.get().defaultBlockState(),
+                    BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
+
     public static final RegistryObject<Block> OBSIDIAN_STAIRS = registerBlock("obsidian_stairs",
             () -> new StairBlock(Blocks.OBSIDIAN.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.OBSIDIAN).requiresCorrectToolForDrops()));
 
     public static final RegistryObject<Block> DIAMOND_STAIRS = registerBlock("diamond_stairs",
             () -> new StairBlock(Blocks.DIAMOND_BLOCK.defaultBlockState(), BlockBehaviour.Properties.ofFullCopy(Blocks.DIAMOND_BLOCK).requiresCorrectToolForDrops()));
+
+    public static final RegistryObject<Block> SOUL_SAND_BRICK_SLAB = registerBlock("soul_sand_brick_slab",
+            () -> new SlabBlock(BlockBehaviour.Properties.of().strength(3f).requiresCorrectToolForDrops()));
 
     private static <T extends Block> RegistryObject<T> registerBlock(String name, Supplier<T> block) {
         RegistryObject<T> toReturn = BLOCKS.register(name, block);

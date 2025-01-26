@@ -5,7 +5,6 @@ import com.dark.tutorialmod.items.ModCreativeModeTabs;
 import com.dark.tutorialmod.items.ModItems;
 import com.mojang.logging.LogUtils;
 import net.minecraft.world.item.CreativeModeTabs;
-import net.minecraft.world.level.block.Blocks;
 import net.minecraftforge.api.distmarker.Dist;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.event.BuildCreativeModeTabContentsEvent;
@@ -57,6 +56,8 @@ public class TutorialMod {
             event.accept(ModItems.CYRENIAN_INGOT);
             event.accept(ModItems.MYSTIC_POWDER);
             event.accept(ModItems.UNSTABLE_CONCOCTION);
+            event.accept(ModItems.JADE);
+            event.accept(ModItems.RAW_JADE);
         }
 
         if(event.getTabKey() == CreativeModeTabs.BUILDING_BLOCKS) {
@@ -66,8 +67,14 @@ public class TutorialMod {
             event.accept(ModBlocks.OBSIDIAN_STAIRS);
             event.accept(ModBlocks.DIAMOND_STAIRS);
             event.accept(ModBlocks.SOUL_SAND_BRICK);
+            event.accept(ModBlocks.SOUL_SAND_BRICKS);
+            event.accept(ModBlocks.SOUL_SAND_BRICK_EMPOWERED);
             event.accept(ModBlocks.SOUL_SAND_BRICK_CRACKED);
             event.accept(ModBlocks.SOUL_SAND_BRICK_LEAKING);
+            event.accept(ModBlocks.SOUL_SAND_BRICK_STAIRS);
+            event.accept(ModBlocks.SOUL_SAND_BRICK_SLAB);
+            event.accept(ModBlocks.SAND_SOIL);
+            event.accept(ModBlocks.JADE_DEPOSIT);
         }
 
         if(event.getTabKey() == CreativeModeTabs.TOOLS_AND_UTILITIES) {
