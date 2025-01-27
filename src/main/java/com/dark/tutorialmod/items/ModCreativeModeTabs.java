@@ -22,11 +22,11 @@ public class ModCreativeModeTabs {
                         output.accept(ModItems.RAW_CYRENIAN.get());
                         output.accept(ModItems.CYRENIAN_NUGGET.get());
                         output.accept(ModItems.CYRENIAN_INGOT.get());
-                        output.accept(ModItems.EMPOWERED_IRON_AXE.get());
-                        output.accept(ModItems.EMPOWERED_IRON_HOE.get());
-                        output.accept(ModItems.EMPOWERED_IRON_PICKAXE.get());
-                        output.accept(ModItems.EMPOWERED_IRON_SHOVEL.get());
-                        output.accept(ModItems.EMPOWERED_IRON_SWORD.get());
+                        output.accept(ModItems.EMPOWERED_NETHERITE_AXE.get());
+                        output.accept(ModItems.EMPOWERED_NETHERITE_HOE.get());
+                        output.accept(ModItems.EMPOWERED_NETHERITE_PICKAXE.get());
+                        output.accept(ModItems.EMPOWERED_NETHERITE_SHOVEL.get());
+                        output.accept(ModItems.EMPOWERED_NETHERITE_SWORD.get());
 
                     }).build());
 

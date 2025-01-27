@@ -52,25 +52,25 @@ public class ModItems {
     public static final RegistryObject<Item> UNSTABLE_CONCOCTION = ITEMS.register("unstable_concoction",
             () -> new FuelItem(new Item.Properties(), 15000));
 
-    public static final RegistryObject<Item> EMPOWERED_IRON_SWORD = ITEMS.register("empowered_iron_sword",
-            () -> new SwordItem(ModToolTiers.EMPOWERED_IRON,new Item.Properties().attributes(SwordItem.
-                    createAttributes(ModToolTiers.EMPOWERED_IRON, 3, -2.4f ))));
+    public static final RegistryObject<Item> EMPOWERED_NETHERITE_SWORD = ITEMS.register("empowered_netherite_sword",
+            () -> new SwordItem(ModToolTiers.EMPOWERED_NETHERITE,new Item.Properties().attributes(SwordItem.
+                    createAttributes(ModToolTiers.EMPOWERED_NETHERITE, 3, -2.4f ))));
 
-    public static final RegistryObject<Item> EMPOWERED_IRON_SHOVEL = ITEMS.register("empowered_iron_shovel",
-            () -> new ShovelItem(ModToolTiers.EMPOWERED_IRON,new Item.Properties().attributes(ShovelItem.
-                    createAttributes(ModToolTiers.EMPOWERED_IRON, 1.5F, -3.0F ))));
+    public static final RegistryObject<Item> EMPOWERED_NETHERITE_SHOVEL = ITEMS.register("empowered_netherite_shovel",
+            () -> new ShovelItem(ModToolTiers.EMPOWERED_NETHERITE,new Item.Properties().attributes(ShovelItem.
+                    createAttributes(ModToolTiers.EMPOWERED_NETHERITE, 1.5F, -3.0F ))));
 
-    public static final RegistryObject<Item> EMPOWERED_IRON_PICKAXE = ITEMS.register("empowered_iron_pickaxe",
-            () -> new PickaxeItem(ModToolTiers.EMPOWERED_IRON,new Item.Properties().attributes(PickaxeItem.
-                    createAttributes(ModToolTiers.EMPOWERED_IRON, 1, -2.8f ))));
+    public static final RegistryObject<Item> EMPOWERED_NETHERITE_PICKAXE = ITEMS.register("empowered_netherite_pickaxe",
+            () -> new PickaxeItem(ModToolTiers.EMPOWERED_NETHERITE,new Item.Properties().attributes(PickaxeItem.
+                    createAttributes(ModToolTiers.EMPOWERED_NETHERITE, 1, -2.8f ))));
 
-    public static final RegistryObject<Item> EMPOWERED_IRON_AXE = ITEMS.register("empowered_iron_axe",
-            () -> new AxeItem(ModToolTiers.EMPOWERED_IRON,new Item.Properties().attributes(AxeItem.
-                    createAttributes(ModToolTiers.EMPOWERED_IRON, 6, -3.0f ))));
+    public static final RegistryObject<Item> EMPOWERED_NETHERITE_AXE = ITEMS.register("empowered_netherite_axe",
+            () -> new AxeItem(ModToolTiers.EMPOWERED_NETHERITE,new Item.Properties().attributes(AxeItem.
+                    createAttributes(ModToolTiers.EMPOWERED_NETHERITE, 5, -3.0f ))));
 
-    public static final RegistryObject<Item> EMPOWERED_IRON_HOE = ITEMS.register("empowered_iron_hoe",
-            () -> new HoeItem(ModToolTiers.EMPOWERED_IRON,new Item.Properties().attributes(HoeItem.
-                    createAttributes(ModToolTiers.EMPOWERED_IRON, -2, -1.0f ))));
+    public static final RegistryObject<Item> EMPOWERED_NETHERITE_HOE = ITEMS.register("empowered_netherite_hoe",
+            () -> new HoeItem(ModToolTiers.EMPOWERED_NETHERITE,new Item.Properties().attributes(HoeItem.
+                    createAttributes(ModToolTiers.EMPOWERED_NETHERITE, -4, -1.0f ))));
 
 
     public static void register(IEventBus eventBus) {

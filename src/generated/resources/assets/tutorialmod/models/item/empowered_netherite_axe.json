@@ -1,6 +1,6 @@
 {
   "parent": "minecraft:item/handheld",
   "textures": {
-    "layer0": "tutorialmod:item/empowered_iron_axe"
+    "layer0": "tutorialmod:item/empowered_netherite_axe"
   }
 }

@@ -1,13 +1,13 @@
-// 1.21	2025-01-26T14:14:38.5321818	Item Models: tutorialmod
+// 1.21	2025-01-26T20:03:36.499445	Item Models: tutorialmod
 098ba9ef3897352b35c79cce38d0f7a3efcb4496 assets/tutorialmod/models/item/blueberries.json
 69a45d9eda7fcbbb46f3a4bf568243a7b2141123 assets/tutorialmod/models/item/chisel.json
 4647e347d16798c907f8e23d6df56f06344ec4d3 assets/tutorialmod/models/item/cyrenian_ingot.json
 6c9d42002503bf0c882a382248a259cbc42b7ce1 assets/tutorialmod/models/item/cyrenian_nugget.json
-7d7fe793db35f5635ad99f9dba17f8a4e5dc7e2d assets/tutorialmod/models/item/empowered_iron_axe.json
-1cda7b2fec7b7f2f6b2631390bd562adbb380093 assets/tutorialmod/models/item/empowered_iron_hoe.json
-95731cb7b9babc119ad0bb740c07232f4a2c2e5f assets/tutorialmod/models/item/empowered_iron_pickaxe.json
-f7f54f3425c618e6707c8f2014e1afbcba540dd7 assets/tutorialmod/models/item/empowered_iron_shovel.json
-5d0819a3da56544e1ddd6ae32977d89ea739da37 assets/tutorialmod/models/item/empowered_iron_sword.json
+772d54d3defe62f94f05fd80ba757fd312e2b4db assets/tutorialmod/models/item/empowered_netherite_axe.json
+83ec450e6a7794ef678a409821b7bd2c0aba0522 assets/tutorialmod/models/item/empowered_netherite_hoe.json
+637c68161af5069e0dd69a43c845e503c1245684 assets/tutorialmod/models/item/empowered_netherite_pickaxe.json
+5ec5c48a77183e040170dfa9c772e9c22ee81518 assets/tutorialmod/models/item/empowered_netherite_shovel.json
+2e45b85571f41084b570b1c577497ceb43b6f401 assets/tutorialmod/models/item/empowered_netherite_sword.json
 95ba1cbecdfd9d204ce9cf5214c1be1afd2c53ca assets/tutorialmod/models/item/jade.json
 da2c15c84d4424a0ba2457082ee760ae473cb181 assets/tutorialmod/models/item/mystic_powder.json
 26a5f0c0319e1dc3c7c5d5b5fa36501520eb08cc assets/tutorialmod/models/item/pineapple.json

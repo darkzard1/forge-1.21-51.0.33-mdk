@@ -29,11 +29,11 @@ public class ModItemModelProvider extends ItemModelProvider {
         basicItem(ModItems.RAW_JADE.get());
         basicItem(ModItems.JADE.get());
 
-        handheldItem(ModItems.EMPOWERED_IRON_AXE);
-        handheldItem(ModItems.EMPOWERED_IRON_HOE);
-        handheldItem(ModItems.EMPOWERED_IRON_PICKAXE);
-        handheldItem(ModItems.EMPOWERED_IRON_SHOVEL);
-        handheldItem(ModItems.EMPOWERED_IRON_SWORD);
+        handheldItem(ModItems.EMPOWERED_NETHERITE_HOE);
+        handheldItem(ModItems.EMPOWERED_NETHERITE_PICKAXE);
+        handheldItem(ModItems.EMPOWERED_NETHERITE_AXE);
+        handheldItem(ModItems.EMPOWERED_NETHERITE_SHOVEL);
+        handheldItem(ModItems.EMPOWERED_NETHERITE_SWORD);
     }
 
     private ItemModelBuilder handheldItem(RegistryObject<Item> item) {
